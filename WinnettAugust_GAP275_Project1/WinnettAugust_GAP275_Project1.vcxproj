@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AiBoss.cpp" />
+    <ClCompile Include="AiStateChase.cpp" />
+    <ClCompile Include="AiStateMachine.cpp" />
+    <ClCompile Include="AiStateMachineEnemy.cpp" />
+    <ClCompile Include="AiStateWander.cpp" />
+    <ClCompile Include="AnimationComponent.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="ColliderComponent.cpp" />
+    <ClCompile Include="CollisionReferee.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="ExampleGame.cpp" />
+    <ClCompile Include="ExampleGameplay.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameStateMachine.cpp" />
+    <ClCompile Include="Healing.cpp" />
+    <ClCompile Include="HealthBar.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="RNG.cpp" />
+    <ClCompile Include="SaveData.cpp" />
+    <ClCompile Include="SoundExampleObject.cpp" />
+    <ClCompile Include="Spike.cpp" />
+    <ClCompile Include="StateCredits.cpp" />
+    <ClCompile Include="StateGameOver.cpp" />
+    <ClCompile Include="StateLoadGame.cpp" />
+    <ClCompile Include="StateMainMenu.cpp" />
+    <ClCompile Include="StateSaveGame.cpp" />
+    <ClCompile Include="StateWinGame.cpp" />
+    <ClCompile Include="StaticImage.cpp" />
+    <ClCompile Include="UIButton.cpp" />
+    <ClCompile Include="UITextField.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Movement.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="WinZone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AiBoss.h" />
+    <ClInclude Include="AiStateChase.h" />
+    <ClInclude Include="AiStateMachine.h" />
+    <ClInclude Include="AiStateMachineEnemy.h" />
+    <ClInclude Include="AiStateWander.h" />
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="Boss.h" />
+    <ClInclude Include="ColliderComponent.h" />
+    <ClInclude Include="CollisionReferee.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="ExampleGame.h" />
+    <ClInclude Include="ExampleGameplay.h" />
+    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameStateMachine.h" />
+    <ClInclude Include="Healing.h" />
+    <ClInclude Include="HealthBar.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="RNG.h" />
+    <ClInclude Include="SaveData.h" />
+    <ClInclude Include="SoundExampleObject.h" />
+    <ClInclude Include="Spike.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateCredits.h" />
+    <ClInclude Include="StateGameOver.h" />
+    <ClInclude Include="StateLoadGame.h" />
+    <ClInclude Include="StateMainMenu.h" />
+    <ClInclude Include="StateSaveGame.h" />
+    <ClInclude Include="StateWinGame.h" />
+    <ClInclude Include="StaticImage.h" />
+    <ClInclude Include="UIButton.h" />
+    <ClInclude Include="UITextField.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Movement.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="WinZone.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6475c8d2-f8d4-4595-9a7d-ff271024130a}</ProjectGuid>
+    <RootNamespace>WinnettAugust_GAP275_Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_ttf\include;$(SolutionDir)lib\SDL_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL_Image\lib\x86;$(SolutionDir)lib\SDL\lib\x86;$(SolutionDir)lib\SDL_ttf\lib\x86;$(SolutionDir)lib\SDL_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_Image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x86\SDL2.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\libfreetype-6.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmodplug-1.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_ttf\include;$(SolutionDir)lib\SDL_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL_Image\lib\x86;$(SolutionDir)lib\SDL\lib\x86;$(SolutionDir)lib\SDL_ttf\lib\x86;$(SolutionDir)lib\SDL_mixer\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_Image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x86\SDL2.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\libfreetype-6.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x86\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x86\libmodplug-1.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_ttf\include;$(SolutionDir)lib\SDL_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL_Image\lib\x64;$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL_ttf\lib\x64;$(SolutionDir)lib\SDL_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_Image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\libfreetype-6.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmodplug-1.dll" "$(OutDir)"
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib\SDL_Image\include;$(SolutionDir)lib\SDL\include;$(SolutionDir)lib\SDL_ttf\include;$(SolutionDir)lib\SDL_mixer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\SDL_Image\lib\x64;$(SolutionDir)lib\SDL\lib\x64;$(SolutionDir)lib\SDL_ttf\lib\x64;$(SolutionDir)lib\SDL_mixer\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_Image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)lib\SDL\lib\x64\SDL2.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\SDL2_Image.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libjpeg-9.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\libpng16-16.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Image\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\SDL2_ttf.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\libfreetype-6.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_ttf\lib\x64\zlib1.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\SDL2_mixer.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmpg123-0.dll" "$(OutDir)"
+copy "$(SolutionDir)lib\SDL_Mixer\lib\x64\libmodplug-1.dll" "$(OutDir)"
+xcopy "$(ProjectDir)assets" "$(OutDir)assets" /s /e /i /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
